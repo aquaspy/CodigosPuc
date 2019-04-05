@@ -1,0 +1,38 @@
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Atividade 1</title>
+    <script type="text/javascript">
+      function vamo(){
+       var preco = 0;
+        preco = parseFloat(document.getElementById("testezao").value);
+        if (preco >= 0.01 && preco <= 199.99)
+        {
+          alert("Desconto de 10%");
+        }
+        if (preco >= 200.00 && preco <= 499.99)
+        {
+          alert("Desconto de 12%");
+        }
+        if (preco >= 500.00 && preco <= 1000.00)
+        {
+          alert("Desconto de 15%");
+        }
+        if (preco > 1000)
+        {
+          alert("Desconto de 20%");
+        }
+        if (preco <= 0)
+        {
+          alert("Valor do preço inválido");
+        }
+      }
+
+    </script>
+  </head>
+  <body>
+    <p> kkkkkkkzap </p>
+    <input type="text" id="testezao">
+    <button onclick="vamo()">Aa</button>
+  </body>
+</html>
