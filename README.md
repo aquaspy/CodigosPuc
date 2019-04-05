@@ -1,2 +1,2 @@
 # CodigosPuc
-codigos da puc kkkzap
+Repositório criado pra organizar a puc zap minas
