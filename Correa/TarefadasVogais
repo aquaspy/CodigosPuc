@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+#define fras_tamanho 100 // Valor maximo da string.
+
+
+void main()
+{
+    char frase[fras_tamanho];
+    int i, tamanho, vogais;
+       printf("Digite uma frase ou palavra : ");
+       fgets(frase, sizeof frase, stdin); // Le a string
+
+    vogais = 0;
+    tamanho = strlen(frase); //pega o tamanho da frase digitada
+
+    for(i=0; i<tamanho; i++) //repete até verificar todos os caracteres da frase
+    {
+
+        if(frase[i] =='a' || frase[i]=='e' || frase[i]=='i' || frase[i]=='o' || frase[i]=='u' || frase[i]=='A' || frase[i]=='E' || frase[i]=='I' || frase[i]=='O' || frase[i]=='U')
+        {
+            vogais++;
+        }
+    }
+    printf("\nO numero total de vogais eh : %d\n", vogais); // exibe na tela
+}
